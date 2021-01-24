@@ -2,8 +2,9 @@ package ru.netology.stats;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class StatsMethodTest {
-    StatsMethod method = new StatsMethod();
+class StatisticsServiceTest {
+
+    StatisticsService method = new StatisticsService();
     int[] money = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
 
     @org.junit.jupiter.api.Test
@@ -23,7 +24,7 @@ class StatsMethodTest {
 
     @org.junit.jupiter.api.Test
     void searchMax() {
-        int expected = 8;
+        int expected = 6;
         int actual = method.searchMax(money);
         assertEquals(expected, actual);
     }
